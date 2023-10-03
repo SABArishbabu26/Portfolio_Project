@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+}
+
+.first {
+    height: 100vh;
+    width: 100%;
+    background-image: url(media/nature.JPG);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0%;
+}
+
+.header {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: rgb(36, 74, 197);
+}
+
+span {
+    color: rgb(145, 37, 37);
+}
+
+.pages ul li{
+    display: inline;
+    float: right;
+    padding: 30px 20px 0px 10px;
+}
+
+.pages ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(70, 68, 68);
+    text-transform: capitalize;
+    
+}
+
+.pages ul li a:hover {
+    color: rgb(145, 37, 37);
+    transition: .4s;
+}
+
+.content {
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.content h4{
+    color: wheat;
+    letter-spacing: 2px;
+    margin-bottom: 31px;
+}
+
+.content h1{
+    color: white;
+    margin: 20px 0px 10px;
+    font-size: 65px;
+}
+
+.content h3 {
+    color: rgb(207, 184, 184);
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.newsletter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid rgb(145, 37, 37);
+    outline: none;
+    border-radius: 30px;
+}
+
+.newsletter form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgb(145, 37, 37);
+    color: white;
+    box-shadow: 0px 0px 5px #4d4b4b, 0px 0px 15px #a78484;
+    top: 6px;
+    right: 6px;
+}
+
+.about {
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #a78484;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+    border-radius: 60%;
+}
+
+.about-txet {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-txet h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-txet h5 {
+    color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-txet p {
+    color: rgba(233, 207, 233, 0.8);
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 45px;
+}
+
+.skills {
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0px;
+    background-image: url(media/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 19%;
+}
+
+.skills h2 {
+    font-size: 60px;
+    text-decoration: underline;
+    color: gainsboro;
+}
+
+.skills ul li {
+    font-size: 40px;
+    line-height: 80px;
+    color: #a78484;
+    /* text-shadow: #4d4b4b; */
+    text-shadow: 
+        -1px -1px 0px #000,
+         0px -1px 0px #000,
+         1px -1px 0px #000,
+        -1px  0px 0px #000,
+         1px  0px 0px #000,
+        -1px  1px 0px #000,
+         0px  1px 0px #000,
+         1px  1px 0px #000;
+}
+
+.projects h2{
+    height: 10vh;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 32px;
+    background-image: linear-gradient(to right ,#3d3b3b, #c2a1a1);
+    margin-bottom: 0%;
+    text-decoration: underline;
+    text-shadow: 
+        -1px -1px 0px #c2a1a1,
+         0px -1px 0px #c2a1a1,
+         1px -1px 0px #c2a1a1;
+}
+
+.left, .right {
+    height: 90vh;
+    width: 100%;
+    padding: 50px 0px 30px 50px;
+}
+
+.left {
+    background: #c2a1a1;
+    color: #383636;
+}
+
+.right {
+    background: #3d3b3b;
+    color: #a78484;
+}
+
