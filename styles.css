@@ -10,6 +10,7 @@ body {
     margin: 0;
 }
 
+
 .first {
     height: 100vh;
     width: 100%;
@@ -20,21 +21,33 @@ body {
 
 .header {
     text-align: center;
-    padding-top: 70px;
     font-size: 18px;
     letter-spacing: 1px;
     cursor: pointer;
-    color: rgb(36, 74, 197);
+    color: wheat;
+    text-shadow: 1px 0 3px #5e5b5b, 1px 0 5px #5757da;
+    /* padding-top: 70px; */
 }
 
 span {
-    color: rgb(145, 37, 37);
+    color: rgb(214, 34, 34);
 }
 
-.pages ul li{
-    display: inline;
-    float: right;
-    padding: 30px 20px 0px 10px;
+.pages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pages li {
+    display: inline; /* Display list items horizontally */
+    margin-left: 20px; /* Adjust spacing between list items */
+}
+
+.pages {
+    text-align: right; /* Align the text to the right */
+    padding: 20px 10px 20px 0;
+    /* position: fixed; */
 }
 
 .pages ul li a {
@@ -42,17 +55,19 @@ span {
     font-weight: bold;
     color: rgb(70, 68, 68);
     text-transform: capitalize;
+    transition: color 0.4s, transform 0.4s;
 }
 
-.pages ul li a:hover {
-    color: rgb(145, 37, 37);
+.pages a:hover {
+    color: rgb(214, 34, 34);
     transition: .4s;
+    transform: scale(1.1);
 }
 
 .content {
     position: absolute;
-    top: 55%;
-    left: 8%;
+    top: 58%;
+    left: 12%;
     transform: translateY(-50%);
 }
 
@@ -74,116 +89,134 @@ span {
     margin-bottom: 50px;
 }
 
-.newsletter form {
-    width: 380px;
-    max-width: 100%;
-    position: relative;
-}
-
-.newsletter form input:first-child {
-    display: inline-block;
-    width: 100%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid rgb(145, 37, 37);
-    outline: none;
-    border-radius: 30px;
-}
-
-.newsletter form input:last-child {
-    position: absolute;
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    background-color: rgb(145, 37, 37);
-    color: white;
-    box-shadow: 0px 0px 5px #4d4b4b, 0px 0px 15px #a78484;
-    top: 6px;
-    right: 6px;
-}
+/* ---------------------------about me section starts---------------------------- */
 
 .about {
     height: 100vh;
     width: 100%;
     padding: 100px 0px;
-    background-color: #a78484;
-}
-
-.about img {
-    height: auto;
-    width: 430px;
-    border-radius: 60%;
-}
-
-.about-txet {
-    width: 550px;
-}
-
-.main {
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
+    background-image: linear-gradient(to right, #a78484, transparent), url('media/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+  
+  .about img {
+    max-width: 100%;
+    height: 700px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+  
+  .main {
+    width: 1500px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.about-txet h2 {
+  }
+  
+  .about-txet {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    border-radius: 50px;
+  }
+  
+  .about-txet h2 {
     color: white;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
-}
-
-.about-txet h5 {
+  }
+  
+  .about-txet h5 {
     color: white;
     font-size: 22px;
     letter-spacing: 2px;
     margin-bottom: 25px;
     text-transform: capitalize;
-}
-
-.about-txet p {
-    color: rgba(233, 207, 233, 0.8);
+  }
+  
+  .about-txet p {
+    color: rgb(255, 255, 255);
     letter-spacing: 1px;
     line-height: 24px;
     font-size: 18px;
     text-align: justify;
-    margin-bottom: 45px;
-}
+    font-weight: 480;
+  }
+
+/* ---------------------------skills section starts---------------------------- */
 
 .skills {
+    position: relative;
     height: 100vh;
     width: 100%;
     padding: 100px 0px;
+    padding-left: 19%;
+    overflow: hidden;
+}
+
+.skillList{
+    width: 600px;
+}
+.skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url(media/bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-left: 19%;
+    filter: blur(2px);
+    z-index: -1;
 }
+
 
 .skills h2 {
-    font-size: 60px;
+    font-size: 55px;
     text-decoration: underline;
-    color: gainsboro;
+    color: rgb(27, 27, 27);
+    margin-bottom: 30px;
 }
 
-.skills ul li {
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills li {
+    font-size: 24px;
+    margin: 10px 0;
     font-size: 40px;
-    line-height: 80px;
-    color: #a78484;
-    /* text-shadow: #4d4b4b; */
+    line-height: 45px;
+    color: whitesmoke; /* Text color for skills */
     text-shadow: 
         -1px -1px 0px #000,
-         0px -1px 0px #000,
-         1px -1px 0px #000,
-        -1px  0px 0px #000,
-         1px  0px 0px #000,
-        -1px  1px 0px #000,
-         0px  1px 0px #000,
-         1px  1px 0px #000;
+         0px -1px 0px #000;
+    transition: color 0.4s;
 }
+
+.skills li::before {
+    content: "\2021"; /* Bullet point (•) as a list item marker */
+    color: whitesmoke; /* Red color for the bullet point */
+    font-size: 30px;
+    display: inline-block;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.skills li:hover {
+    color: rgb(214, 34, 34); /* Color change on hover */
+    transition: color 0.4s;
+    cursor: pointer;
+    font-size: 50px; /* Increase font size on hover */
+}
+
+
+/* --------------------------------project page starts--------------------------------- */
 
 .projects h2{
     height: 10vh;
@@ -234,7 +267,7 @@ span {
 }
 
 .contact-me .button-two {
-    background-color: rgb(145, 37, 37);
+    background-color: rgb(214, 34, 34);
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -246,7 +279,7 @@ span {
 
 .contact-me .button-two:hover {
     background-color: transparent;
-    border: 2px solid rgb(145, 37, 37);
+    border: 2px solid rgb(214, 34, 34);
     cursor: pointer;
 }
 
@@ -264,7 +297,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(145, 37, 37);
+    background: rgb(214, 34, 34);
     border-radius: 50%;
     margin: 20px 10px;
     color: white;
